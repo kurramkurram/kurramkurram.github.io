@@ -9,3 +9,8 @@ const topAppBar = new MDCTopAppBar(topAppBarElement);
 
 const iconButtonRipple = new MDCRipple(document.querySelector('.mdc-icon-button'));
 iconButtonRipple.unbounded = true;
+
+const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
+const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
+  return new MDCRipple(el);
+});
