@@ -17,7 +17,7 @@ a {
 }
 
 body {
-    color: blue;
+    color: black;
 }
 
 .mdc-top-app-bar {
@@ -31,6 +31,27 @@ body {
 .top-app-bar-text-common {
     list-style: none;
     padding: 10px;
+}
+
+.card {
+    &__wrapper {
+        width: 90%;
+        padding-top: 100px;
+        margin: 0 auto;
+    }
+}
+
+.mdc-card {
+    display: inline-block;
+    margin: 10px;
+    &__primary-action {
+        width: 400px;
+    }
+
+    &__media {
+        height: 250px;
+    }
+
 }
 
 .my-card-content {
