@@ -25,10 +25,14 @@ body {
 
     .mdc-top-app-bar {
         background-color: white;
-    }
 
-    .mdc-top-app-bar__title {
-        color: $topAppBar;
+        &__section {
+            margin-right: 20px;
+        }
+
+        &__title {
+            color: $topAppBar;
+        }
     }
 
     .top-app-bar-text-common {
@@ -44,7 +48,7 @@ body {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             max-width: 1070px;
             padding-bottom: 16px !important;
