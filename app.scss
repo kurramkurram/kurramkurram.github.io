@@ -16,62 +16,67 @@ a {
     color: black;
 }
 
+.card-font-mg {
+    margin-left: 10px;
+}
+
 body {
     color: black;
-}
 
-.mdc-top-app-bar {
-    background-color: white;
-}
-
-.mdc-top-app-bar__title {
-    color: $topAppBar;
-}
-
-.top-app-bar-text-common {
-    list-style: none;
-    padding: 10px;
-}
-
-.card {
-    &__wrapper {
-        width: 90%;
-        padding-top: 100px;
-        margin: 0 auto;
-    }
-}
-
-.mdc-card {
-    display: inline-block;
-    margin: 10px;
-    &__primary-action {
-        width: 400px;
+    .mdc-top-app-bar {
+        background-color: white;
     }
 
-    &__media {
-        height: 250px;
+    .mdc-top-app-bar__title {
+        color: $topAppBar;
     }
 
-}
+    .top-app-bar-text-common {
+        list-style: none;
+        padding: 10px;
+    }
 
-.my-card-content {
-    padding: 16px;
-}
+    .card {
+        &__wrapper {
+            padding-top: 100px;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: 0 auto;
+            max-width: 1070px;
+            padding-bottom: 16px !important;
+            justify-content: space-between;
+        }
+    }
 
-.my-card {
-    height: 350px;
-    width: 350px;
-}
+    .mdc-card {
+        display: inline-block;
+        margin: 5px;
 
-.sidebar__wrapper {
-    background-color: red;
-    position: absolute;
-    right: 0;
-    width: 300px;
-    height: 100%;
-    text-align: center;
-}
+        &__media {
+            min-width: 250px;
+            height: 250px;
+        } 
+    }
 
-.twitter__timeline {
-    padding: 10px;
+    .demo-card {
+        &__title {
+            @extend .card-font-mg;
+        }
+        &__secondary {
+            @extend .card-font-mg;
+        }
+    }
+
+    .sidebar__wrapper {
+        background-color: red;
+        position: absolute;
+        right: 0;
+        width: 300px;
+        height: 100%;
+        text-align: center;
+    }
 }
