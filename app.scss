@@ -20,6 +20,19 @@ a {
     margin-left: 10px;
 }
 
+.title-font-size {
+    font-size: 25px;
+}
+
+.subtitel-font-size {
+    font-size: 17px;
+}
+
+.common__wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
 body {
     color: black;
 
@@ -75,12 +88,71 @@ body {
         }
     }
 
-    .sidebar__wrapper {
-        background-color: red;
-        position: absolute;
-        right: 0;
-        width: 300px;
-        height: 100%;
-        text-align: center;
+    .about {
+        &__wrapper {
+            @extend .common__wrapper;
+        }
+
+        &__title {
+            @extend .title-font-size;
+        }
     }
+
+    .skill {
+        &__wrapper {
+            @extend .common__wrapper;
+        }
+
+        &__title {
+            @extend .title-font-size;
+        }
+    }
+
+    .carrier {
+        &__wrapper {
+            @extend .common__wrapper;
+        }
+
+        &__title {
+            @extend .title-font-size;
+        }
+    }
+
+    .contact {
+        &__wrapper {
+            @extend .common__wrapper;
+        }
+
+        &__title {
+            @extend .title-font-size;
+        }
+
+        &__contents {
+            @extend .common__wrapper;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        &__twitter {
+            margin: 10px;
+        }
+
+        &__qiita {
+            margin: 10px;
+        }
+
+        &__note {
+            margin: 10px;
+        }
+    }
+
+    // .sidebar__wrapper {
+    //     background-color: red;
+    //     position: absolute;
+    //     right: 0;
+    //     width: 300px;
+    //     height: 100%;
+    //     text-align: center;
+    // }
 }
