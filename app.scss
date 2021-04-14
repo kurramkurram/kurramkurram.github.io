@@ -28,9 +28,13 @@ a {
     font-size: 17px;
 }
 
+.description-font-size {
+    font-size: 14px;
+}
+
 .common__wrapper {
     width: 90%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 body {
@@ -127,11 +131,16 @@ body {
             @extend .title-font-size;
         }
 
+        &__description {
+            text-align: center;
+            @extend .description-font-size;
+        }
+
         &__contents {
-            @extend .common__wrapper;
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         &__twitter {
