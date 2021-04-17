@@ -37,6 +37,17 @@ a {
     margin: 10px auto;
 }
 
+.skill-contents-wrapper {
+    margin: 10px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 4px;
+    display: inline-block;
+    justify-content: space-between;
+    flex-basis: 45%;
+    min-height: 200px;
+}
+
 body {
     color: black;
 
@@ -109,6 +120,45 @@ body {
 
         &__title {
             @extend .title-font-size;
+        }
+
+        &__contents {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            &__title {
+                text-align: center;
+                font-size: 17px;
+                font-weight: bold;
+            }
+            &__item {
+                list-style: none;
+                margin: 2px;
+            }
+        }
+
+        &__name {
+            display: inline-block;
+            font-size: 14px;
+            width: 150px;
+            vertical-align: middle;
+        }
+
+        &__star {
+            vertical-align: middle;
+        }
+
+        &__language__wrapper {
+            @extend .skill-contents-wrapper;
+        }
+
+        &__db__wrapper {
+            @extend .skill-contents-wrapper;
+        }
+
+        &__tool__wrapper {
+            @extend .skill-contents-wrapper;
         }
     }
 
