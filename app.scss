@@ -29,12 +29,12 @@ a {
 }
 
 .description-font-size {
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .common__wrapper {
     width: 90%;
-    margin: 10px auto;
+    margin: 20px auto;
 }
 
 .skill-contents-wrapper {
@@ -196,33 +196,31 @@ body {
         &__wrapper {
             @extend .common__wrapper;
         }
-
+        &__header {
+            margin-bottom: 20px;
+        }
         &__title {
             @extend .title-font-size;
         }
-
         &__description {
             text-align: center;
             @extend .description-font-size;
+            margin-bottom: 20px;
         }
-
         &__contents {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
-
         &__twitter {
-            margin: 10px;
+            margin: 20px;
         }
-
         &__qiita {
-            margin: 10px;
+            margin: 20px;
         }
-
         &__note {
-            margin: 10px;
+            margin: 20px;
         }
     }
 
