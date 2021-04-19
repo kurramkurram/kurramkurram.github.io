@@ -112,6 +112,23 @@ body {
         &__title {
             @extend .title-font-size;
         }
+        &__item{
+            &__title {
+                display: inline-block;
+                font-size: 17px;
+                margin: 10px 60px 10px 20px;
+                width: 100px;
+            }
+            &__description {
+                display: inline-block;
+                font-size: 17px;
+            }
+        }
+        &__greeting {
+            margin: 20px;
+            font-size: 17px;
+            text-align: center;
+        }
     }
 
     .skill {
