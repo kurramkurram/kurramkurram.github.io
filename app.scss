@@ -203,9 +203,31 @@ body {
         &__wrapper {
             @extend .common__wrapper;
         }
-
         &__title {
             @extend .title-font-size;
+        }
+        &__contents {
+            &__item {
+                margin: 10px 20px;
+                // font-size: 0;
+                letter-spacing: -.4em; /* 文字間を詰めて隙間をなくす */
+            }
+            &__start {
+                display: inline-block;
+                font-size: 17px;
+                width: 150px;
+                letter-spacing: normal;
+            }
+            &__summary {
+                display: inline-block;
+                font-size: 17px;
+                letter-spacing: normal;
+            }
+            &__description {
+                margin: 0 0 0 150px;
+                font-size: 17px;
+                letter-spacing: normal;
+            }
         }
     }
 
