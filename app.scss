@@ -10,7 +10,7 @@
 
 @include icon-button.core-styles;
 
-@import 'variables';
+// @import 'variables';
 
 a {
     color: black;
@@ -60,7 +60,7 @@ body {
         }
 
         &__title {
-            color: $topAppBar;
+            color: black;
         }
     }
 
