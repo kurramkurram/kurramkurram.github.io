@@ -21,7 +21,7 @@ a {
 }
 
 .title-font-size {
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .subtitel-font-size {
@@ -103,14 +103,24 @@ body {
             @extend .card-font-mg;
         }
     }
+    .title {
+        &__icon {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            vertical-align: middle;
+        }
+        &__main {
+            display: inline-block;
+            margin-left: 10px;
+            @extend .title-font-size;
+            vertical-align: middle;
+        }
+    }
 
     .about {
         &__wrapper {
             @extend .common__wrapper;
-        }
-
-        &__title {
-            @extend .title-font-size;
         }
         &__item{
             &__title {
@@ -135,11 +145,6 @@ body {
         &__wrapper {
             @extend .common__wrapper;
         }
-
-        &__title {
-            @extend .title-font-size;
-        }
-
         &__contents {
             &__container {
                 display: flex;
@@ -209,9 +214,6 @@ body {
         &__wrapper {
             @extend .common__wrapper;
         }
-        &__title {
-            @extend .title-font-size;
-        }
         &__contents {
             &__item {
                 margin: 10px 20px;
@@ -243,9 +245,6 @@ body {
         }
         &__header {
             margin-bottom: 20px;
-        }
-        &__title {
-            @extend .title-font-size;
         }
         &__description {
             text-align: center;
