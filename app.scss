@@ -124,11 +124,14 @@ body {
         &__wrapper {
             @extend .common__wrapper;
         }
+        &__contents {
+            margin: 10px 20px;
+        }
         &__item{
             &__title {
                 display: inline-block;
                 font-size: 17px;
-                margin: 10px 60px 10px 20px;
+                margin: 0px 60px 20px 0px;
                 width: 100px;
             }
             &__description {
@@ -148,6 +151,7 @@ body {
             @extend .common__wrapper;
         }
         &__contents {
+            margin: 10px 20px;
             &__container {
                 display: flex;
                 flex-wrap: wrap;
@@ -217,8 +221,9 @@ body {
             @extend .common__wrapper;
         }
         &__contents {
+            margin: 10px 20px;
             &__item {
-                margin: 10px 20px;
+                margin: 0px 0px 10px 0px;
                 // font-size: 0;
                 letter-spacing: -.4em; /* 文字間を詰めて隙間をなくす */
             }
