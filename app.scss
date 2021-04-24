@@ -101,6 +101,7 @@ body {
         }
         &__secondary {
             @extend .card-font-mg;
+            margin: 5px;
         }
     }
     .title {
