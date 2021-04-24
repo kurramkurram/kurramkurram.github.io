@@ -210,6 +210,9 @@ body {
         &__tool__wrapper {
             @extend .skill-contents-wrapper;
         }
+        &__others__wrapper {
+            @extend .skill-contents-wrapper;
+        }
         &__github {
             text-align: center;
             margin: 20px;
