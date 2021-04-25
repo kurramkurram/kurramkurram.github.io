@@ -128,7 +128,15 @@ body {
             @extend .common__wrapper;
         }
         &__contents {
-            margin: 10px 20px;
+            &__container {
+                margin: 10px 20px;
+                display: inline-block;
+            }
+            &__icon {
+                position: absolute;
+                margin: 10px 20px;
+                display: inline-block;
+            }
         }
         &__item{
             &__title {
