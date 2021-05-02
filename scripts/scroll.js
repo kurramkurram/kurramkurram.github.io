@@ -13,7 +13,6 @@ class ScrollObserver {
         
             for(let target of targets) {
                 var pos = target.getBoundingClientRect().top + scroll;
-                console.log(scroll, pos, height);
                 if (scroll > pos - height + offset) {
                     target.classList.add("inview");
                 }

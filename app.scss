@@ -65,6 +65,44 @@ body {
     margin: 0px;
     padding: 0px;
 
+    .loading {
+        background-color: white;
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+        opacity: 1;
+        z-index: 100;
+        position: fixed;
+        transition: all 1s;
+        justify-content: center;
+        align-items: center;
+
+        &.loadend {
+            opacity: 0;
+            visibility: none;
+        }
+    }
+
+    .animation-item {
+        display: inline-block;
+        width: 15px;
+        height: 80px;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: black;
+        animation: loading-animation 1.2s infinite ease-in-out;   
+    }
+
+    .loading-animations {
+        & .animation-item {
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                    animation-delay: $i * .4s; 
+                }
+            }
+        }
+    }
+
     .mdc-top-app-bar {
         background-color: white;
         box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .5);
@@ -361,4 +399,10 @@ body {
     width: 50px;
     height: 50px;
     text-decoration: none;
+}
+
+@keyframes loading-animation {
+    50%{
+        transform: scaleY(0);
+    }
 }
