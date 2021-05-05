@@ -392,13 +392,38 @@ body {
     bottom: -50px;
     opacity: 0.6;
     border-radius: 50%;
+
+    &.footer__inview {
+        opacity: 0;
+    }
 }
+
 #page_top a{
     position: relative;
     display: block;
     width: 50px;
     height: 50px;
     text-decoration: none;
+}
+
+.page-top {
+    &__default {
+        opacity: 1;
+        display: block;
+        &.in__footer {
+            opacity: 0;
+            display: none;
+        }
+    }
+
+    &__footer {
+        opacity: 0;
+        display: none;
+        &.in__footer {
+            opacity: 1;
+            display: block;
+        }
+    }
 }
 
 @keyframes loading-animation {
