@@ -10,12 +10,14 @@
 
 @include icon-button.core-styles;
 
+$cMainColor: whitesmoke;
+
 a {
     color: black;
     text-decoration: none;
 }
 .footer__link {
-    color: white;
+    color: $cMainColor;
 }
 
 .card-font-mg {
@@ -64,9 +66,10 @@ body {
     font-family: 'Segoe UI';
     margin: 0px;
     padding: 0px;
+    background-color: $cMainColor;
 
     .loading {
-        background-color: white;
+        background-color: $cMainColor;
         display: flex;
         width: 100vw;
         height: 100vh;
@@ -104,7 +107,7 @@ body {
     }
 
     .mdc-top-app-bar {
-        background-color: white;
+        background-color: $cMainColor;
         box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .5);
 
         &__section {
@@ -349,7 +352,7 @@ body {
 
     .footer {
         &__wrapper {
-            color: white;
+            color: $cMainColor;
             background-color: #3e3e3e;
             padding: 10px 0px;
         }
