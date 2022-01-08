@@ -24,8 +24,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "scripts": {
-    "build": "webpack",
-    "start": "webpack serve"
+    "build": "webpack --mode development",
+    "start": "webpack serve --mode development"
   },
   "author": "",
   "license": "ISC"

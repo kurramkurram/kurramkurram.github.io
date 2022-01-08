@@ -1,0 +1,541 @@
+@charset "UTF-8";
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer__link {
+  color: whitesmoke;
+}
+
+.card-font-mg, body .demo-card__title, body .demo-card__secondary {
+  margin-left: 10px;
+  padding: 3px;
+}
+
+.title-font-size, body .title__main {
+  font-size: 40px;
+}
+
+.subtitel-font-size {
+  font-size: 17px;
+}
+
+.description-font-size, body .contact__description {
+  font-size: 20px;
+}
+
+.common__wrapper, body .about__wrapper, body .work__wrapper, body .skill__wrapper, body .carrier__wrapper, body .contact__wrapper {
+  width: 90%;
+  margin: 100px auto;
+  -webkit-transition: all 1.0s;
+  transition: all 1.0s;
+  opacity: 0;
+}
+
+.common__wrapper.inview, body .inview.about__wrapper, body .inview.work__wrapper, body .inview.skill__wrapper, body .inview.carrier__wrapper, body .inview.contact__wrapper {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.skill-contents-wrapper, body .skill__language__wrapper, body .skill__db__wrapper, body .skill__tool__wrapper, body .skill__others__wrapper {
+  margin: 10px;
+  padding: 10px;
+  background-color: gainsboro;
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  min-height: 250px;
+  -webkit-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+.work-contents-wrapper, body .work__container {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  display: inline-block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  min-height: 250px;
+  -webkit-box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 10px 25px 0 rgba(0, 0, 0, 0.5);
+}
+
+body {
+  color: black;
+  font-family: 'Segoe UI';
+  margin: 0px;
+  padding: 0px;
+  background-color: whitesmoke;
+}
+
+body .loading {
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  z-index: 100;
+  position: fixed;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .loading.loadend {
+  opacity: 0;
+  visibility: hidden;
+}
+
+body .animation-item {
+  display: inline-block;
+  width: 15px;
+  height: 80px;
+  margin: 5px;
+  border-radius: 10px;
+  background-color: black;
+  -webkit-animation: loading-animation 1.2s infinite ease-in-out;
+          animation: loading-animation 1.2s infinite ease-in-out;
+}
+
+body .loading-animations .animation-item:nth-child(1) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+body .loading-animations .animation-item:nth-child(2) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+body .loading-animations .animation-item:nth-child(3) {
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+
+body .mdc-top-app-bar {
+  background-color: whitesmoke;
+  -webkit-box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
+          box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+body .mdc-top-app-bar__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .mdc-top-app-bar__section {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  text-align: right;
+  width: 100%;
+}
+
+body .mdc-top-app-bar__selector {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+body .mdc-top-app-bar__title {
+  padding: 20px;
+  color: black;
+}
+
+body .top-app-bar-text-common {
+  list-style: none;
+  padding: 20px;
+}
+
+body .card__wrapper {
+  padding-top: 150px;
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1070px;
+  padding-bottom: 16px !important;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .mdc-card {
+  display: inline-block;
+  margin: 5px;
+}
+
+body .mdc-card__media {
+  min-width: 200px;
+  height: 100px;
+  border-radius: 5% 5% 0% 0%;
+  background-size: 100%;
+}
+
+body .mdc-card__primary {
+  -webkit-box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.5);
+  border-color: red;
+  border-radius: 5% 5% 5% 5%;
+}
+
+body .demo-card__secondary {
+  margin: 5px;
+}
+
+body .title__icon {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+body .title__main {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+body .about__contents__container {
+  margin: 10px 20px;
+  display: inline-block;
+}
+
+body .about__contents__icon {
+  position: absolute;
+  margin: 10px 20px;
+  display: inline-block;
+}
+
+body .about__item__title {
+  display: inline-block;
+  font-size: 17px;
+  margin: 0px 60px 20px 0px;
+  width: 100px;
+}
+
+body .about__item__description {
+  display: inline-block;
+  font-size: 17px;
+}
+
+body .about__greeting {
+  margin: 20px;
+  height: auto;
+  font-size: 100%;
+  text-align: center;
+}
+
+body .work__contents {
+  margin: 10px 20px;
+}
+
+body .work__contents__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .work__contents__title {
+  font-size: 20px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+body .work__contents__description {
+  font-size: 17px;
+  margin: 20px;
+  text-align: center;
+}
+
+body .work__contents__item {
+  list-style: none;
+  margin: 2px;
+}
+
+body .work__contents__icon {
+  text-align: center;
+}
+
+body .work__thumbnail {
+  text-align: center;
+}
+
+body .work__github {
+  text-align: center;
+  margin: 20px;
+}
+
+body .skill__contents {
+  margin: 10px 20px;
+}
+
+body .skill__contents__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .skill__contents__title__wrapper {
+  text-align: center;
+  margin-bottom: 7px;
+}
+
+body .skill__contents__title__icon {
+  display: inline-block;
+  vertical-align: middle;
+  height: 25px;
+  margin-right: 5px;
+}
+
+body .skill__contents__title__description {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+body .skill__contents__description {
+  font-size: 17px;
+  margin: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+body .skill__contents__item {
+  list-style: none;
+  margin: 2px;
+}
+
+body .skill__name {
+  display: inline-block;
+  font-size: 17px;
+  width: 150px;
+  vertical-align: middle;
+}
+
+body .skill__period {
+  display: inline-block;
+  font-size: 17px;
+  width: 75px;
+  vertical-align: middle;
+}
+
+body .skill__star {
+  vertical-align: middle;
+}
+
+body .skill__github {
+  text-align: center;
+  margin: 20px;
+}
+
+body .carrier__contents {
+  margin: 10px 20px;
+}
+
+body .carrier__contents__item {
+  margin: 0px 0px 10px 0px;
+  letter-spacing: -.4em;
+  /* 文字間を詰めて隙間をなくす */
+}
+
+body .carrier__contents__start {
+  display: inline-block;
+  font-size: 100%;
+  height: 17px;
+  width: 150px;
+  letter-spacing: normal;
+}
+
+body .carrier__contents__summary {
+  display: inline-block;
+  font-size: 100%;
+  height: 17px;
+  letter-spacing: normal;
+}
+
+body .carrier__contents__description {
+  margin: 0 0 0 150px;
+  font-size: 100%;
+  height: 17px;
+  letter-spacing: normal;
+}
+
+body .contact__header {
+  margin-bottom: 20px;
+}
+
+body .contact__description {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+body .contact__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .contact__twitter {
+  margin: 20px;
+}
+
+body .contact__qiita {
+  margin: 20px;
+}
+
+body .contact__note {
+  margin: 20px;
+}
+
+body .footer__wrapper {
+  color: whitesmoke;
+  background-color: #3e3e3e;
+  padding: 10px 0px;
+}
+
+body .footer__container {
+  width: 90%;
+  margin: 0px auto;
+}
+
+body .footer__name {
+  font-size: 35px;
+  margin: 10px;
+}
+
+body .footer__description {
+  font-size: 20px;
+  margin: 10px 20px;
+}
+
+body .footer__link__container {
+  text-align: center;
+  margin: 10px;
+}
+
+body .footer__link__item {
+  margin: 10px;
+  font-size: 17px;
+  display: inline-block;
+  list-style: none;
+}
+
+body .footer__copyright {
+  text-align: center;
+  margin: 10px;
+}
+
+#page_top {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: -50px;
+  opacity: 0.6;
+  border-radius: 50%;
+}
+
+#page_top.footer__inview {
+  opacity: 0;
+}
+
+#page_top a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+}
+
+.page-top__default {
+  opacity: 1;
+  display: block;
+}
+
+.page-top__default.in__footer {
+  opacity: 0;
+  display: none;
+}
+
+.page-top__footer {
+  opacity: 0;
+  display: none;
+}
+
+.page-top__footer.in__footer {
+  opacity: 1;
+  display: block;
+}
+
+@-webkit-keyframes loading-animation {
+  50% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+
+@keyframes loading-animation {
+  50% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+/*# sourceMappingURL=app.css.map */

@@ -11,6 +11,7 @@ window.onload = function() {
 };
 
 new ScrollObserver('.carrier__wrapper');
+new ScrollObserver('.work__wrapper');
 new ScrollObserver('.skill__wrapper');
 new ScrollObserver('.about__wrapper');
 new ScrollObserver('.contact__wrapper');
