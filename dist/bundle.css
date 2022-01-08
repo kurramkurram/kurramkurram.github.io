@@ -230,6 +230,10 @@ body .work__github {
   text-align: center;
   margin: 20px;
 }
+body .work__link {
+  color: blue;
+  text-decoration: underline;
+}
 body .skill__contents {
   margin: 10px 20px;
 }

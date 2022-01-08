@@ -308,6 +308,11 @@ body .work__github {
   margin: 20px;
 }
 
+body .work__link {
+  color: blue;
+  text-decoration: underline;
+}
+
 body .skill__contents {
   margin: 10px 20px;
 }
