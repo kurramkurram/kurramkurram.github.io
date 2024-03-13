@@ -295,7 +295,7 @@ body .carrier__contents {
   margin: 10px 20px;
 }
 body .carrier__contents__item {
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 40px 0px;
   letter-spacing: -0.4em;
   /* 文字間を詰めて隙間をなくす */
 }
