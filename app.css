@@ -43,7 +43,7 @@ a {
   margin: 10px;
   padding: 10px;
   background-color: gainsboro;
-  border-radius: 4px;
+  border-radius: 30px;
   display: inline-block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -58,7 +58,7 @@ a {
 .work-contents-wrapper, body .work__container {
   margin: 10px;
   padding: 10px;
-  border-radius: 4px;
+  border-radius: 30px;
   display: inline-block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -391,7 +391,7 @@ body .carrier__contents {
 }
 
 body .carrier__contents__item {
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 30px 0px;
   letter-spacing: -.4em;
   /* 文字間を詰めて隙間をなくす */
 }
